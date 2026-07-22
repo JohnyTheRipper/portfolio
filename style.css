@@ -402,6 +402,11 @@ ul {
   background: #051013;
 }
 
+.project-media-terminal img {
+  aspect-ratio: 16 / 9;
+  width: min(100%, 34rem);
+}
+
 .project-media-vision {
   background: #edf4f5;
 }
