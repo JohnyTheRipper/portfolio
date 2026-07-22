@@ -1,217 +1,392 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Personal Portfolio</title>
-  <title>VITELIWIDNER</title>
-  <meta name="description" content="Web designer and front-end developer">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111719">
+    <title>Viteli Widner | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Viteli Widner builds Python research systems, TypeScript web apps, and polished GitHub Pages projects."
+    >
+    <meta property="og:title" content="Viteli Widner | Developer Portfolio">
+    <meta
+      property="og:description"
+      content="Python, TypeScript, FastAPI, Next.js, data pipelines, dashboards, and frontend product work."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/delphiron-banner.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<body>
-  <!-- navbar header -->
-  <div class="nav-header">
-    <div class="nav-brand">
-      <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
-    </div>
-    <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-      <ul>
-        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
-        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- end navbar header -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Viteli Widner home">
+        <span class="brand-mark" aria-hidden="true">VW</span>
+        <span>Viteli Widner</span>
+      </a>
 
-  <!-- sidebar slider -->
-  <div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
-    <div class="nav-container">
-      <div class="nav-links">
-        <ul id='myMenu'>
-          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-          <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
-          <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- end navbar slider -->
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
 
-  <!-- begin fullpage -->
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#proof">Proof</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <div id="fullpage">
+    <main id="main">
+      <section id="top" class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Python + TypeScript Developer</p>
+          <h1>Building market intelligence tools, local dashboards, and sharp web experiences.</h1>
+          <p class="hero-lede">
+            I turn rough ideas into working systems: modular research pipelines, browser-based
+            product interfaces, static sites, and project workflows that are readable enough to keep
+            improving after the first version ships.
+          </p>
 
-    <!-- begin section -->
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#work">View Projects</a>
+            <a class="button secondary" href="https://github.com/JohnyTheRipper" target="_blank" rel="noreferrer">
+              GitHub Profile
+            </a>
+          </div>
 
-    <div class="section aboutme" data-anchor="aboutme">
-      <div class="opaque-bg animated fadeInDown">
-        <h1 style="color:white">VITELI<span style="color:#FF6363">/</span>WIDNER</h1>
-        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-      </div>
-      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="skills">
-      <div class="content">
-        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Viteli Widner! I'm a Front-end Developer focused on creating clean, responsive web designs!</p>
-
-        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-          <div class="skillbar clearfix " data-percent="90%">
-            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
-            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-            <div class="skill-bar-percent">90%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="80%">
-            <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
-            <div class="skillbar-bar" style="background: #EBB035;"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="75%">
-            <div class="skillbar-title" style="background: #218559;"><span>JAVA SCRIPT</span></div>
-            <div class="skillbar-bar" style="background: #218559;"></div>
-            <div class="skill-bar-percent">75%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="45%">
-            <div class="skillbar-title" style="background: #6840D4;"><span>PYTHON</span></div>
-            <div class="skillbar-bar" style="background: #6840D4;"></div>
-            <div class="skill-bar-percent">45%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="30%">
-            <div class="skillbar-title" style="background: #06A2CB;"><span>BASH</span></div>
-            <div class="skillbar-bar" style="background: #06A2CB;"></div>
-            <div class="skill-bar-percent">30%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="20%">
-            <div class="skillbar-title" style="background: #AB4DD2;"><span>JAVA</span></div>
-            <div class="skillbar-bar" style="background: #AB4DD2;"></div>
-            <div class="skill-bar-percent">20%</div>
-          </div> <!-- End Skill Bar -->
-        </div>
-      </div>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="projects">
-      <div class="content-slide">
-        <div class="slide">
-          <h1 class="wow fadeInDown" data-wow-delay="0.2s">Placeholder 1</h1>
-          <p class="wow fadeInDown" data-wow-delay="0.2s">Description of project</p>
-          <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-        <div class="slide">
-          <h1>Placeholder 2</h1>
-          <p>Description of project</p>
-          <img data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-        <div class="slide">
-          <h1>Placeholder 3</h1>
-          <p>Description of project</p>
-          <img data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-        <div class="slide">
-          <h1>Placeholder 4</h1>
-          <p>Description of project</p>
-          <img data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-        <div class="slide">
-          <h1>Placeholder 5</h1>
-          <p>Description of project</p>
-          <img data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-        <div class="slide">
-          <h1>Placeholder 6</h1>
-          <p>Description of project</p>
-          <img data-src="https://fakeimg.pl/700x500/ffffff/000?text=PLACEHOLDER&font=bebas">
-        </div>
-      </div>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="contact">
-      <div class="content wow fadeInDown" data-wow-delay="0.2s">
-        <h1>CONTACT ME</h1>
-        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-        <br>
-        <div class="contact-form">
-
-          <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+          <dl class="signal-grid" aria-label="Portfolio highlights">
+            <div>
+              <dt>Featured Builds</dt>
+              <dd>5</dd>
             </div>
-
-            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+            <div>
+              <dt>Test Files</dt>
+              <dd>62</dd>
             </div>
-
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+            <div>
+              <dt>Core Stack</dt>
+              <dd>Python / TS</dd>
             </div>
-
-            <div class="hidden">
-              <input type="text" class="form-control" id="human" name="human" placeholder="">
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="1s">
-              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-            </div>
-          </form>
-          <br>
+          </dl>
         </div>
-      </div>
-    </div>
-    <!-- end section -->
 
-    <!-- begin section -->
-
-    <div class="section fp-auto-height">
-      <div class="footer">
-        <p>CONNECT WITH ME</p>
-        <div class="social-links">
-          <span><a href="https://www.linkedin.com/in/bradleyengelhardt" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
-          <span><a target="_blank" href="https://twitter.com/bradengelhardt" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
-          <span><a href="https://github.com/SquishyAndroid" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
-          <span><a href="https://codepen.io/SquishyAndroid/pens/public/"><i class="fa fa-codepen fa-2x"></i></a></span>
+        <div class="hero-visual" aria-label="Project image preview">
+          <figure class="visual-panel delphiron-panel">
+            <img src="assets/delphiron-banner.png" alt="Delphiron project banner">
+            <figcaption>Delphiron financial research pipeline</figcaption>
+          </figure>
+          <figure class="visual-panel horses-panel">
+            <img
+              src="assets/two-horses-hero.svg"
+              alt="Two Horses Pressure Washing website hero artwork"
+            >
+            <figcaption>Next.js service business website concept</figcaption>
+          </figure>
         </div>
-      </div>
-    </div>
-    <!-- end section -->
+      </section>
 
-  </div>
-  <!-- end fullpage -->
-</body>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
+      <section id="work" class="section-block work-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Real projects and repo-backed builds</h2>
+          <p>
+            These are not generic placeholders. Each project below is grounded in source code from
+            my GitHub account or local workspace and uses project visuals derived from those builds.
+          </p>
+        </div>
 
-</body>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-media project-media-dark">
+              <img src="assets/delphiron-banner.png" alt="Delphiron logo banner">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Python / FastAPI / Data Pipelines</p>
+              <h3>Delphiron</h3>
+              <p>
+                AI-driven financial decision platform built around a typed pipeline context and a
+                top-down research flow from mission profile to final ranking output.
+              </p>
+              <ul class="project-points">
+                <li>18 modular research areas covering market state, macro, news, risk, portfolio, explainability, and ranking.</li>
+                <li>Fixture-first data ingestion with optional yfinance, FRED, and FMP providers.</li>
+                <li>FastAPI dashboard harness with live module progress, PWA metadata, and mobile dashboard views.</li>
+              </ul>
+              <div class="tag-list" aria-label="Delphiron technologies">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>SQLite</span>
+                <span>Financial Data</span>
+                <span>Testing</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JohnyTheRipper/Delphiron" target="_blank" rel="noreferrer">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media project-media-terminal">
+              <img
+                src="assets/jarvis-command-interface.svg"
+                alt="JARVIS command interface dashboard visual"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Python / Electron / Local AI Runtime</p>
+              <h3>JARVIS Always-On Voice Intelligence Core</h3>
+              <p>
+                Local assistant runtime with a FastAPI backend, desktop command interface,
+                voice workflow, Ollama model routing, and identity/vision integration points.
+              </p>
+              <ul class="project-points">
+                <li>Backend lifecycle publishes system events, health state, and API surfaces for typed and voice prompts.</li>
+                <li>Desktop command center exposes core, logs, vision, voice, systems, settings, and control-deck workflows.</li>
+                <li>Local-first design keeps LLM, speech, identity, and perception pieces on the machine instead of assuming cloud services.</li>
+              </ul>
+              <div class="tag-list" aria-label="JARVIS technologies">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Electron</span>
+                <span>Ollama</span>
+                <span>Voice UI</span>
+              </div>
+              <div class="project-links">
+                <span>Local workspace project</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reverse">
+            <div class="project-media project-media-vision">
+              <img
+                src="assets/face-id-perception.svg"
+                alt="Face-ID perception pipeline visual"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Computer Vision / Local Identity / Perception</p>
+              <h3>Local Face-ID and JARVIS Perception</h3>
+              <p>
+                Linux webcam face-recognition prototype that expanded into a local perception
+                stack for object detection, person tracking, scene state, and event logging.
+              </p>
+              <ul class="project-points">
+                <li>Uses OpenCV, InsightFace embeddings, ONNX Runtime CPU execution, and SQLite identity storage.</li>
+                <li>Adds video-source abstractions for local, HTTP, RTSP, and configured camera inputs.</li>
+                <li>Implements object detection, multi-object tracking, face attachment, occupancy state, and temporal event rules.</li>
+              </ul>
+              <div class="tag-list" aria-label="Face-ID technologies">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>InsightFace</span>
+                <span>ONNX Runtime</span>
+                <span>YOLO</span>
+                <span>SQLite</span>
+              </div>
+              <div class="project-links">
+                <span>Local workspace project</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reverse">
+            <div class="project-media project-media-light two-horses-media">
+              <img
+                src="assets/two-horses-hero.svg"
+                alt="Two Horses Pressure Washing website illustration"
+              >
+              <img
+                class="media-detail"
+                src="assets/two-horses-driveway-after.svg"
+                alt="Two Horses project driveway after-cleaning gallery artwork"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Next.js / TypeScript / Static Export</p>
+              <h3>Two Horses Pressure Washing Demo</h3>
+              <p>
+                A polished local-business website concept for phone calls, quote requests, service
+                area messaging, and GitHub Pages deployment.
+              </p>
+              <ul class="project-points">
+                <li>Built with the Next.js App Router, TypeScript, Tailwind CSS, and reusable React components.</li>
+                <li>Includes quote flow logic, business schema, static export checks, and GitHub Pages automation.</li>
+                <li>Uses original project artwork and gallery before/after SVG assets for the visual system.</li>
+              </ul>
+              <div class="tag-list" aria-label="Two Horses technologies">
+                <span>TypeScript</span>
+                <span>Next.js</span>
+                <span>React</span>
+                <span>Tailwind</span>
+                <span>GitHub Pages</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://johnytheripper.github.io/two-horses-pressure-washing-demo/"
+                  target="_blank"
+                  rel="noreferrer"
+                >Live Site</a>
+                <a
+                  href="https://github.com/JohnyTheRipper/two-horses-pressure-washing-demo"
+                  target="_blank"
+                  rel="noreferrer"
+                >Repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section-block skills-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Skillset</p>
+          <h2>What I can credibly show from the code</h2>
+        </div>
+
+        <div class="skill-grid">
+          <section class="skill-card">
+            <h3>Backend and Data Systems</h3>
+            <p>
+              Python application structure, typed data flow, modular engines, provider interfaces,
+              deterministic fixtures, SQLite persistence, and FastAPI dashboards.
+            </p>
+          </section>
+
+          <section class="skill-card">
+            <h3>Local AI and Desktop Systems</h3>
+            <p>
+              Local LLM routing, Ollama integration, Electron command-center UI, speech workflow
+              hooks, backend health checks, and privacy-conscious runtime boundaries.
+            </p>
+          </section>
+
+          <section class="skill-card">
+            <h3>Computer Vision</h3>
+            <p>
+              Face embeddings, threshold-based identity matching, OpenCV camera handling, YOLO
+              object detection, multi-object tracking, pose estimates, and event reasoning.
+            </p>
+          </section>
+
+          <section class="skill-card">
+            <h3>Frontend Product UI</h3>
+            <p>
+              Responsive HTML/CSS, React components, Next.js App Router pages, accessible forms,
+              mobile-first layouts, and GitHub Pages-friendly static builds.
+            </p>
+          </section>
+
+          <section class="skill-card">
+            <h3>Automation and Delivery</h3>
+            <p>
+              Test suites, smoke checks, static export validation, GitHub Actions deployment, PWA
+              metadata, service workers, and repo documentation.
+            </p>
+          </section>
+
+          <section class="skill-card">
+            <h3>Domain Thinking</h3>
+            <p>
+              Financial research workflows, risk-aware ranking, market data providers, quote and
+              lead flows for service businesses, and owner-confirmation guardrails.
+            </p>
+          </section>
+        </div>
+
+        <div class="toolbelt" aria-label="Tools and technologies">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>Electron</span>
+          <span>Ollama</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>SQLite</span>
+          <span>OpenCV</span>
+          <span>InsightFace</span>
+          <span>ONNX Runtime</span>
+          <span>YOLO</span>
+          <span>GitHub Actions</span>
+          <span>PWA</span>
+        </div>
+      </section>
+
+      <section id="proof" class="section-block proof-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Evidence</p>
+          <h2>How the repositories back up the positioning</h2>
+        </div>
+
+        <div class="proof-grid">
+          <article>
+            <strong>Python depth</strong>
+            <span>Delphiron is almost entirely Python by GitHub language data and includes a multi-module research engine.</span>
+          </article>
+          <article>
+            <strong>Local AI runtime</strong>
+            <span>JARVIS connects a FastAPI core, desktop command interface, voice controls, Ollama model selection, and vision panels.</span>
+          </article>
+          <article>
+            <strong>Vision pipeline</strong>
+            <span>face-id combines OpenCV camera handling, InsightFace embeddings, ONNX Runtime, YOLO detection, tracking, and SQLite storage.</span>
+          </article>
+          <article>
+            <strong>Frontend delivery</strong>
+            <span>Two Horses combines TypeScript, React, Next.js, Tailwind, SEO metadata, and static export for GitHub Pages.</span>
+          </article>
+          <article>
+            <strong>Testing habit</strong>
+            <span>Delphiron includes 29 focused test files across providers, modules, risk, ranking, presenters, and the web dashboard.</span>
+          </article>
+          <article>
+            <strong>Public polish</strong>
+            <span>The portfolio now points visitors to live work, repository links, project visuals, and skill claims tied to real code.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section-block contact-section">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Want to see the code behind the work?</h2>
+          <p>
+            The cleanest way to evaluate my work is through the repositories themselves. Start with
+            Delphiron for backend/data systems, JARVIS for local AI runtime work, face-id for
+            computer vision, or Two Horses for TypeScript frontend delivery.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/JohnyTheRipper" target="_blank" rel="noreferrer">
+            Open GitHub
+          </a>
+          <a class="button secondary" href="https://johnytheripper.github.io/portfolio/">
+            Live Portfolio
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Viteli Widner</p>
+      <p>Built from public GitHub project evidence. Last updated 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Face-ID perception pipeline visual</title>
+  <desc id="desc">A local computer-vision pipeline with face embeddings, object detection, tracking, scene state, and event logging.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f1719"/>
+      <stop offset="0.5" stop-color="#172326"/>
+      <stop offset="1" stop-color="#eef4f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f1719" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="960" height="720" fill="url(#bg)"/>
+  <rect x="70" y="78" width="820" height="500" rx="8" fill="#f8fbfb" filter="url(#shadow)"/>
+  <rect x="100" y="118" width="470" height="332" rx="6" fill="#111719"/>
+  <rect x="126" y="146" width="420" height="276" rx="4" fill="#203236"/>
+  <g stroke="#ffffff" stroke-opacity="0.1">
+    <path d="M126 238h420"/>
+    <path d="M126 330h420"/>
+    <path d="M266 146v276"/>
+    <path d="M406 146v276"/>
+  </g>
+  <rect x="196" y="182" width="132" height="190" rx="10" fill="#0e7c7b" fill-opacity="0.18" stroke="#31d3c6" stroke-width="4"/>
+  <circle cx="262" cy="238" r="44" fill="#d7b98b"/>
+  <path d="M202 368c16-54 40-78 60-78s44 24 60 78" fill="#d7b98b"/>
+  <text x="196" y="397" fill="#31d3c6" font-family="monospace" font-size="18" font-weight="800">UNKNOWN / MATCH</text>
+  <rect x="380" y="220" width="106" height="86" fill="none" stroke="#f0a536" stroke-width="4"/>
+  <text x="382" y="326" fill="#f0a536" font-family="monospace" font-size="18" font-weight="800">OBJECT</text>
+  <path d="M168 472h364" stroke="#dbe6e8" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="168" cy="472" r="22" fill="#0e7c7b"/>
+  <circle cx="290" cy="472" r="22" fill="#0e7c7b"/>
+  <circle cx="412" cy="472" r="22" fill="#0e7c7b"/>
+  <circle cx="532" cy="472" r="22" fill="#0e7c7b"/>
+  <g fill="#111719" font-family="monospace" font-size="14" font-weight="800" text-anchor="middle">
+    <text x="168" y="507">FRAME</text>
+    <text x="290" y="507">DETECT</text>
+    <text x="412" y="507">TRACK</text>
+    <text x="532" y="507">EVENTS</text>
+  </g>
+  <g fill="#111719">
+    <text x="620" y="146" font-family="monospace" font-size="20" font-weight="900">LOCAL FACE-ID</text>
+    <text x="620" y="176" font-family="monospace" font-size="15" fill="#687579">OpenCV + InsightFace + ONNX Runtime</text>
+  </g>
+  <g font-family="monospace" font-size="17" font-weight="800">
+    <rect x="620" y="214" width="210" height="42" rx="6" fill="#e7f2f2" stroke="#c9d7da"/>
+    <text x="640" y="241" fill="#0e7c7b">FACE EMBEDDINGS</text>
+    <rect x="620" y="274" width="210" height="42" rx="6" fill="#fff3df" stroke="#e4d5bb"/>
+    <text x="640" y="301" fill="#a86912">YOLO DETECTION</text>
+    <rect x="620" y="334" width="210" height="42" rx="6" fill="#eaf0f6" stroke="#cad6df"/>
+    <text x="640" y="361" fill="#2d5d7b">MULTI-OBJECT TRACKS</text>
+    <rect x="620" y="394" width="210" height="42" rx="6" fill="#f4e9e6" stroke="#dfcdc8"/>
+    <text x="640" y="421" fill="#c44536">SCENE EVENTS</text>
+  </g>
+  <rect x="620" y="472" width="210" height="66" rx="6" fill="#111719"/>
+  <text x="642" y="499" fill="#ffffff" font-family="monospace" font-size="16" font-weight="800">SQLite local storage</text>
+  <text x="642" y="522" fill="#98a6a9" font-family="monospace" font-size="13">identities + events</text>
+  <rect x="70" y="598" width="820" height="44" rx="6" fill="#111719"/>
+  <text x="102" y="626" fill="#ffffff" font-family="monospace" font-size="16" font-weight="800">camera-test</text>
+  <text x="238" y="626" fill="#31d3c6" font-family="monospace" font-size="16" font-weight="800">enroll</text>
+  <text x="340" y="626" fill="#31d3c6" font-family="monospace" font-size="16" font-weight="800">recognize</text>
+  <text x="484" y="626" fill="#31d3c6" font-family="monospace" font-size="16" font-weight="800">perceive</text>
+  <text x="604" y="626" fill="#31d3c6" font-family="monospace" font-size="16" font-weight="800">benchmark</text>
+  <text x="746" y="626" fill="#31d3c6" font-family="monospace" font-size="16" font-weight="800">capability-report</text>
+</svg>
